@@ -20,3 +20,25 @@ def main():
     else:
         print("Invalid choice. Exiting.")
         return
+    
+    # Initialize Trainer and Memory Store
+    trainer = ModelTrainer(model, lr=Config.LEARNING_RATE)
+    memory_store = MemoryStore()
+
+    # Simulate Data (Placeholder for actual data loader)
+    data_loader = [torch.randn(1, Config.INPUT_DIM) for _ in range(100)]
+
+    # Train Model
+    print("Starting Training...")
+    trainer.train(data_loader, epochs=Config.EPOCHS)
+
+    # Compress and Store Memory
+    sample_data = torch.randn(1, Config.INPUT_DIM)
+    compressed_data = model.encode(sample_data)
+    memory_store.store("sample_compressed", compressed_data)
+
+    print("Training Complete. Compressed Data Stored.")
+
+if __name__ == "__main__":
+    main()
+
