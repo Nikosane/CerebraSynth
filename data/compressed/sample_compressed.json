@@ -1,0 +1,5 @@
+[
+    {"id": 1, "compressed_vector": [0.123, -0.456, 0.789]},
+    {"id": 2, "compressed_vector": [-0.321, 0.654, -0.987]},
+    {"id": 3, "compressed_vector": [0.111, -0.222, 0.333]}
+]
