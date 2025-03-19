@@ -1,0 +1,6 @@
+# data/reconstructed/sample_reconstructed.json
+[
+    {"id": 1, "reconstructed_text": "The sky is bright and sunny today."},
+    {"id": 2, "reconstructed_text": "AI technology is advancing swiftly."},
+    {"id": 3, "reconstructed_text": "Neural models mimic brain behavior."}
+]
